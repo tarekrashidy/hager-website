@@ -1,35 +1,29 @@
+
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hager — Contact us</title>
+    <title>Hager</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link rel="preload" as="style"
-        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&amp;family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&amp;family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap">
-    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css?v=65fc92584e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/screen.css">
+
     <style>
-        .global-cover.is-optional {
-            background-image: url(/content/images/size/w1600/2021/05/geordanna-cordero-5NE6mX0WVfQ-unsplash.jpg)
+        .global-cover {
+            background-image: url(./assets/img/bg.jpg)
         }
 
         @media(max-width:480px) {
-            .global-cover.is-optional {
-                background-image: url(/content/images/size/w800/2021/05/geordanna-cordero-5NE6mX0WVfQ-unsplash.jpg)
+            .global-cover {
+                background-image: url(./assets/img/bg.jpg)
             }
         }
     </style>
-
-
-
-
-  
-
 
     <style id="gh-members-styles">
         .gh-post-upgrade-cta-content,
@@ -97,109 +91,107 @@
             opacity: 0.92;
         }
     </style>
-
-  
-
-
-    <style>
-        :root {
-            --ghost-accent-color: #f81ce5;
-        }
-    </style>
-
-    <style>
-        .App {
-            text-align: center;
-        }
-
-        .App-logo {
-            height: 40vmin;
-            pointer-events: none;
-        }
-
-        @media (prefers-reduced-motion: no-preference) {
-            .App-logo {
-                -webkit-animation: App-logo-spin infinite 20s linear;
-                animation: App-logo-spin infinite 20s linear;
-            }
-        }
-
-        .App-header {
-            background-color: #282c34;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-size: calc(10px + 2vmin);
-            color: white;
-        }
-
-        .App-link {
-            color: #61dafb;
-        }
-
-        @-webkit-keyframes App-logo-spin {
-            from {
-                -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-            }
-
-            to {
-                -webkit-transform: rotate(360deg);
-                transform: rotate(360deg);
-            }
-        }
-
-        @keyframes App-logo-spin {
-            from {
-                -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-            }
-
-            to {
-                -webkit-transform: rotate(360deg);
-                transform: rotate(360deg);
-            }
-        }
-
-
-    </style>
-    <style type="text/css">
-        @font-face {
-            font-family: Roboto;
-            src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf");
-        }
-    </style>
+ 
 </head>
 
-<body class="custom-page" cz-shortcut-listen="true">
-    <div class="global-cover is-optional"></div>
-
-    <div class="custom-wrap">
-        <div class="custom-container">
+<body class="home-template">
+    <div class="global-cover"></div>
+    <div class="global-wrap">
+        <div class="global-content">
             <header class="header-section">
                 <div class="header-wrap">
                     <div class="header-logo">
-                 Hager
+                        <a href="index.html" class="is-image">حرف</a>
+                    </div>
+                    <div class="header-nav">
+                        <input id="toggle" class="header-checkbox" type="checkbox">
+                        <label class="header-toggle" for="toggle">
+				<span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</span>
+			           </label>
+                        <nav>
+
+                            <ul>
+                                <li><a href="./conditions.html">معايير تدقيق</a></li>
+                                <li><a href="about.html"> عن حرف </a></li>
+                                <li><a href="contact.html">نفذ الان</a></li>
+                             
+                            </ul>
+
+                            <ul>
+                        
+                                <li class="signup"><a href="contact.html" class="global-button">اتصل بنا</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </header>
+            <main class="global-main text-center">
             <div class="custom-content">
                 <form method="POST" action="">
-                    <h1 id="post-title" class="custom-title global-title-medium">Contact us</h1>
-                    <label for="name">Your name</label>
+                    <h1 id="post-title" class="custom-title global-title-medium">تواصل الان</h1>
+                    <label for="name">الاسم </label>
                     <input id="name" type="text" name="name" required="">
-                    <label for="email">Your email address</label>
+                    <label for="email">البريد الالكتروني</label>
                     <input id="email" type="email" name="email" required="">
-                    <label for="message">Your message</label>
+                    <label for="message">نص الرساله</label>
                     <textarea id="message" name="message" required=""></textarea>
-                    <button class="global-button" type="submit">Send message</button>
+                    <button class="global-button" type="submit">ارسال</button>
                 </form>
             </div>
+            </main>
+            <footer class="footer-section global-footer">
+            
+                <div class="footer-nav">
+                    <div class="footer-nav-column is-social d-flex">
+                        <ul class="d-flex">
+                            <li><a href="https://www.facebook.com/ghost"><svg role="img" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z" />
+                                    </svg>Facebook</a></li>
+                            <li><a href="https://twitter.com/fuekothemes"><svg role="img" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z" />
+                                    </svg>Twitter</a></li>
+            
+            
+                            <li><a href="#"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="a"
+                                            d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z" />
+                                    </svg>YouTube</a></li>
+                        </ul>
+                    </div>
+            
+            
+            
+            
+            
+            
+                </div>
+            
+                <div class="footer-copyright text-center">
+                    <a href="">mars</a> &copy; 2022 — All Right Reserved. Published with <a
+                        href="https://www.linkedin.com/in/tarek-ahmed-iti/" target="_blank" rel="noopener noreferrer">Tarek Ahmed</a> .
+                </div>
+            </footer>
         </div>
     </div>
 
+
+    <script src="./assets/js/global.js"></script>
+    <script src="./assets/js/index.js"></script>
+
+
+
+
+
+
+ 
     <style>
         body.is-scroll-banner .is-banner {
             bottom: 30px
@@ -236,8 +228,9 @@
             }
         }
     </style>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
 
- 
 </body>
 
 </html>
